@@ -20,13 +20,7 @@ export function HeroSection() {
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 mb-8">
-            <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-medium text-foreground">
-              {"와디즈 레전드 PD의 노하우를 공개합니다"}
-            </span>
-          </div>
+
 
           {/* Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-foreground leading-tight tracking-tight text-balance">
@@ -34,14 +28,31 @@ export function HeroSection() {
             <span className="text-primary">{"400억"}</span>
             {" 매출의 법칙,"}
             <br />
-            {"당신의 와디즈 상세페이지에"}
+            {"당신의 상세페이지에"}
             <br className="hidden md:block" />
             {" 이식하세요."}
           </h1>
 
           {/* Subheadline */}
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed text-pretty">
-            {"1,000개 프로젝트를 성공시킨 PD의 '팔리는 로직'이 담긴 콘티 자동 생성 도구"}
+          <div className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed text-pretty">
+            <p>
+              {"1,000개 프로젝트를 성공시킨 와디즈 PD 출신"}
+              <br />
+              {"독보적인 ‘성공 DNA’를 이 도구에 모두 담았습니다."}
+            </p>
+          </div>
+
+          {/* Badge (Moved) */}
+          <div className="inline-flex items-center gap-3 rounded-full border border-primary/20 bg-primary/5 px-6 py-2 mt-10">
+            <div className="h-2.5 w-2.5 rounded-full bg-primary animate-pulse" />
+            <span className="text-sm md:text-base font-bold text-foreground">
+              {"클릭 한 번으로 ‘팔리는 콘티’를 만들어보세요."}
+            </span>
+          </div>
+
+          {/* Definition Note (Moved) */}
+          <p className="mt-4 text-[11px] text-muted-foreground/60">
+            {"* 콘티란? 상세페이지의 뼈대가 되는 기획안입니다"}
           </p>
 
           {/* CTAs */}
@@ -62,22 +73,38 @@ export function HeroSection() {
               <a href="#framework">{"성공 프레임워크 보기"}</a>
             </Button>
           </div>
+
+
         </div>
 
         {/* Stats bar */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm"
-            >
-              <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10">
-                <stat.icon className="h-6 w-6 text-primary" />
-              </div>
-              <span className="text-3xl font-black text-foreground tracking-tight">{stat.value}</span>
-              <span className="text-sm text-muted-foreground font-medium">{stat.label}</span>
+          {/* Stat 1 */}
+          <div className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10">
+              <Users className="h-6 w-6 text-primary" />
             </div>
-          ))}
+            <span className="text-3xl font-black text-foreground tracking-tight">{"1,000+"}</span>
+            <span className="text-sm text-muted-foreground font-medium">{"프로젝트 디렉팅"}</span>
+          </div>
+
+          {/* Stat 2 */}
+          <div className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10">
+              <TrendingUp className="h-6 w-6 text-primary" />
+            </div>
+            <span className="text-3xl font-black text-foreground tracking-tight">{"400억+"}</span>
+            <span className="text-sm text-muted-foreground font-medium">{"누적 매출 (KRW)"}</span>
+          </div>
+
+          {/* Stat 3 */}
+          <div className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10">
+              <Award className="h-6 w-6 text-primary" />
+            </div>
+            <span className="text-3xl font-black text-foreground tracking-tight">{"성과 1위"}</span>
+            <span className="text-sm text-muted-foreground font-medium">{"3년 연속 기록"}</span>
+          </div>
         </div>
 
         {/* Scroll indicator */}

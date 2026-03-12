@@ -79,9 +79,9 @@ export function StatsSection() {
           </div>
           <div className="rounded-2xl border border-border bg-card p-6 md:p-8 text-center shadow-sm">
             <p className="text-4xl md:text-5xl font-black text-foreground tracking-tight">
-              <AnimatedNumber target={98} suffix="%" />
+              <AnimatedNumber target={15} suffix="+" />
             </p>
-            <p className="text-sm text-muted-foreground mt-2 font-medium">{"성공률"}</p>
+            <p className="text-sm text-muted-foreground mt-2 font-medium">{"멀티 카테고리"}</p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6 md:p-8 text-center shadow-sm">
             <p className="text-4xl md:text-5xl font-black text-foreground tracking-tight">

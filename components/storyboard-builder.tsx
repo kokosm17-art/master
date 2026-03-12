@@ -76,8 +76,8 @@ function StepIndicator({ currentStep }: { currentStep: number }) {
               i < currentStep
                 ? "bg-primary text-primary-foreground"
                 : i === currentStep
-                ? "bg-primary text-primary-foreground ring-4 ring-primary/20"
-                : "bg-muted text-muted-foreground"
+                  ? "bg-primary text-primary-foreground ring-4 ring-primary/20"
+                  : "bg-muted text-muted-foreground"
             )}
           >
             {i < currentStep ? (
@@ -261,8 +261,10 @@ export function StoryboardBuilder() {
             <br />
             {"지금 바로 만들어보세요"}
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
-            {"3단계 입력만으로 전문가 수준의 콘티가 자동 생성됩니다"}
+          <p className="mt-6 text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
+            {"입력만으로 전문가의 DNA를 이식해 드립니다."}
+            <br />
+            <span className="font-medium text-foreground">{"단 3분 만에 완성해 보세요."}</span>
           </p>
         </div>
 

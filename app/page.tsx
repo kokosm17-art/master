@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
+import { ComparisonSection } from "@/components/comparison-section"
 import { StoryboardBuilder } from "@/components/storyboard-builder"
 import { FrameworkSection } from "@/components/framework-section"
 import { StatsSection } from "@/components/stats-section"
@@ -11,6 +12,7 @@ export default function Page() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <ComparisonSection />
       <StoryboardBuilder />
       <FrameworkSection />
       <StatsSection />

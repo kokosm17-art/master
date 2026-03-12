@@ -10,13 +10,13 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-sm font-bold text-primary-foreground">W</span>
+        <div className="flex items-center">
+          <div className="px-5 py-2 rounded-full bg-primary flex items-center justify-center shadow-sm">
+            <span className="text-base font-bold text-primary-foreground tracking-tight whitespace-nowrap">
+              상세페이지의 정석
+              <span className="text-[10px] ml-1 align-top uppercase">®</span>
+            </span>
           </div>
-          <span className="text-lg font-bold text-foreground tracking-tight">
-            Success PD
-          </span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">

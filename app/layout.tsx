@@ -8,8 +8,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono
 const _notoSansKR = Noto_Sans_KR({ subsets: ["latin"], weight: ["300", "400", "500", "700", "900"], variable: "--font-noto-kr" });
 
 export const metadata: Metadata = {
-  title: '와디즈 프로젝트 성공 PD | 콘티 자동 생성 도구',
-  description: '누적 400억 매출, 1,000개 프로젝트를 성공시킨 PD의 팔리는 로직이 담긴 와디즈 상세페이지 콘티 자동 생성 도구',
+  title: '상세페이지의 정석 | 콘티 자동 생성 도구',
+  description: '누적 400억 매출, 1,000개 프로젝트를 성공시킨 와디즈 PD 출신의 팔리는 로직이 담긴 상세페이지 콘티 자동 생성 도구',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#00c4c4',
+  themeColor: '#0047FF',
   userScalable: true,
 }
 
